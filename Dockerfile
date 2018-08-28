@@ -10,7 +10,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN echo "Asia/Taipei" > /etc/timezone
 RUN dpkg-reconfigure -f noninteractive tzdata
 
-RUN apt-get -qq update
+RUN apt-get update
 
 # CX install
 RUN apt-get install -y gcc libc6-dev g++-multilib mingw32 tofrodos python-markdown libxml2-utils xsltproc dpkg-dev lzop keychain
@@ -30,7 +30,7 @@ RUN apt-get install -y git
 # JDK ref: https://askubuntu.com/questions/464755/how-to-install-openjdk-8-on-14-04-lts
 RUN apt-get install -y software-properties-common
 RUN add-apt-repository ppa:openjdk-r/ppa
-RUN apt-get -qq update
+RUN apt-get update
 RUN apt-get install -y openjdk-8-jdk
 
 # Env ref: https://blog.csdn.net/RonnyJiang/article/details/55812305
