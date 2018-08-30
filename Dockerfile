@@ -17,7 +17,7 @@ RUN apt-get install -y gcc libc6-dev g++-multilib mingw32 tofrodos python-markdo
 RUN apt-get install -y uuid uuid-dev liblz-dev liblzo2-2 liblzo2-dev lzop git-core curl u-boot-tools mtd-utils android-tools-fsutils
 
 # For imx6 build need ref: https://blog.csdn.net/wulantian/article/details/11976511
-RUN apt install -y bc
+RUN apt-get install -y bc
 
 # Google advice
 RUN apt-get install -y git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev libgl1-mesa-dev libxml2-utils xsltproc unzip
